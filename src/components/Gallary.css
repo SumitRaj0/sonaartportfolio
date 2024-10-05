@@ -1,0 +1,32 @@
+.gallary-pop-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    /* padding: 16px; */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gallary-pop-buttons button {
+    background-color: #1ca4e3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    font-size: 1rem;
+    width:50%;
+  }
+  
+  .gallary-pop-buttons button:hover {
+    background-color: #1a8db3;
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  
+  .gallary-pop-buttons button:focus {
+    outline: none; /* Remove focus outline */
+  }

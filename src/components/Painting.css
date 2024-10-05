@@ -1,0 +1,53 @@
+/* Container for the painting section */
+.painting-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .painting-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Painting grid to control layout */
+  .painting-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 600px; /* Set the height for scrolling */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    padding: 10px;
+  }
+  
+  /* Each painting card */
+  .painting-card {
+    width: 100%; /* Show only 2 images per row */
+    margin-bottom: 5%; /* Add small margin between items */
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    box-shadow: rgba(28, 164, 227) 3px 3px 0px 0px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+  }
+  
+  /* Styling for the images */
+  .painting-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* border-bottom: 2px solid #eaeaea; */
+  }
+  
+  /* Painting title under each image */
+  .painting-title {
+    padding: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  

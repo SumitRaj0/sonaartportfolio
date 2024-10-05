@@ -1,0 +1,215 @@
+/* Root styling */
+.portfolio-root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: white;
+  padding: 0 16px; /* Added padding to fit content without overflow */
+}
+
+/* Header styling */
+.portfolio-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+  background-color: white;
+}
+
+.portfolio-title {
+  text-align: center;
+  font-size: 1.75rem; /* Adjusted for better visibility */
+  font-weight: bold;
+  color: #111618;
+  font-family: cursive;
+  margin-right: 16px;
+}
+
+.portfolio-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Banner styling */
+.responsive-banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(28, 164, 227) 3px 3px 0px 0px;
+  /* border: 4px solid #1ca4e3; */
+  /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Keeps the image behind other content */
+}
+
+/* Description */
+.portfolio-description {
+  text-align: center;
+  padding: 10px;
+  color: #111618;
+  font-family: serif;
+  font-size: large;
+  /* margin-top: 16px; */
+}
+
+.portfolio-description:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Buttons section */
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #1ca4e3;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  background-color: #1a8db3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.btn-secondary {
+  background-color: #f0f3f4;
+  color: #111618;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary:hover {
+  background-color: #e0e3e4;
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Subtitle */
+.portfolio-subtitle {
+  text-align: left;
+  padding: 16px 0;
+  color: #111618;
+  font-weight: bold;
+}
+
+/* Artwork container */
+.artworks-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.artwork-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 170px;
+  transition: transform 0.3s;
+}
+
+.artwork-card:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+  filter: grayscal(1);
+  /* margin:10px; */
+}
+
+.artwork-image {
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  border-radius: 8px;
+  box-shadow: rgba(28, 164, 227) 3px 3px 0px 0px;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); Depth effect */
+}
+
+.artwork-details {
+  padding: 8px 0;
+}
+
+.artwork-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #111618;
+}
+
+.artwork-price {
+  font-size: 0.875rem;
+  color: #637c88;
+}
+
+/* Footer section */
+
+.portfolio-footer {
+  display: flex;
+  justify-content: space-around;
+  /* border-top: 1px solid #e0e3e4; */
+  /* background-color: #f8f9fa;  */
+  margin-top: auto; 
+  /* box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);  */
+}
+.footer-button {
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #637c88;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  padding: 8px 16px; /* Adds some padding for better spacing */
+}
+
+.footer-button:hover {
+  color: #1ca4e3; /* Blue color on hover */
+  transform: translateY(-4px); /* Lift effect on hover */
+}
+
+.footer-button span {
+  margin-top: 8px; /* Adds spacing between the icon and text */
+  font-weight: 500; /* Slightly bold for better readability */
+  font-size: 0.9rem; /* Adjusted text size for a cleaner look */
+}
+
+.footer-button svg {
+  font-size: 1.5rem; /* Adjust icon size */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.footer-button:hover svg {
+  transform: scale(1.1); /* Slightly scale the icon on hover */
+}
+.footer-button.active {
+  color: #1ca4e3; /* Change color for active state */
+  transform: translateY(-4px); /* Lift effect for active state */
+}
+
+/* You can also add a border or background color to distinguish it further */
+.footer-button.active:hover {
+  color: #1ca4e3; /* Ensure color stays consistent on hover */
+  transform: translateY(-4px); /* Keep lift effect on hover */
+}
+
